@@ -1,8 +1,19 @@
-## Welcome to GitHub Pages
+## How to resolve libv8/therubyracer issue
 
-You can use the [editor on GitHub](https://github.com/xiedeng/blog/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+$ gem install libv8 -v '3.16.14.3' -- --with-system-v8
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+$ bundle install
+-- see error installing therubyracer --
+$ gem uninstall libv8
+
+$ brew install v8
+
+$ gem install therubyracer
+
+$ bundle install
+-- see error installing libv8 --
+$ gem install libv8 -v '3.16.14.3' -- --with-system-v8
+
 
 ### Markdown
 
